@@ -1,0 +1,405 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://cdn.metin2sg.com/assets/images/metin2-page-image.jpg');
+    background-color: #000;
+    color: white;
+}
+
+/* --- Top Bar Header --- */
+.top-bar {
+    background-color: #222;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.language {
+    font-size: 16px;
+}
+
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* --- 3-Part Button --- */
+.game-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn-left,
+.btn-right {
+    width: 20px;
+    height: 50px;
+}
+
+.btn-middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    padding: 0 20px;
+}
+
+.btn-middle span {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.game-button:hover .btn-middle {
+    filter: brightness(1.2);
+}
+
+/* --- Main Header Navigation --- */
+.main-header {
+    position: relative;
+    text-align: center;
+}
+
+.header-bg {
+    width: 100%;
+}
+
+.navigation-wrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 120px;
+}
+
+.nav-background {
+    position: relative;
+}
+
+.nav-background img {
+    display: block;
+    height: 120px;
+    width: auto;
+}
+
+.nav-menu {
+    position: absolute;
+    top: 50%;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    transform: translateY(-50%);
+}
+
+.nav-menu-left {
+    left: 100px;
+}
+
+.nav-menu-right {
+    right: 100px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-menu a:hover {
+    background-color: rgba(255, 165, 0, 0.8);
+    color: black;
+}
+
+.left-nav {
+    margin-right: -580px;
+    margin-top: 20px;
+}
+
+.right-nav {
+    margin-left: 600px;
+    margin-top: 20px;
+}
+
+.logo-container {
+    padding: 0 20px;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+}
+
+/* --- Shrine Gate Section --- */
+.shrine-gate-container {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.shrine-gate-img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+}
+
+.gate-btn-left,
+.gate-btn-right {
+    width: 35px;
+    height: 110px;
+}
+
+.gate-btn-middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    padding: 0 20px;
+}
+
+.gate-btn-middle span {
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.gate-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.gate-button:hover .gate-btn-middle {
+    filter: brightness(1.2);
+}
+
+/* --- Right Side Visuals --- */
+.right-shrine-container {
+    position: absolute;
+    top: 500px;
+    right: 380px;
+    z-index: 2;
+}
+
+.right-shrine-img {
+    width: 450px;
+    height: auto;
+}
+
+.horizontal-strip-container {
+    position: absolute;
+    top: 575px;
+    right: 405px;
+    z-index: 2;
+}
+
+.horizontal-strip-img {
+    width: 388px;
+    height: auto;
+}
+
+.right-side-group-with-bg {
+    position: absolute;
+    top: 500px;
+    right: 330px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    background: url('https://cdn.metin2sg.com/assets/images/right-block-bg.png') no-repeat center center;
+    background-size: contain;
+    
+    z-index: -1;
+}
+
+/* --- Ranking Section --- */
+.ranking-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    margin: -500px auto;
+    padding: 10px 20px;
+}
+
+.ranking-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.view-top-button .btn-left,
+.view-top-button .btn-right {
+    width: 20px;
+    height: 40px;
+}
+
+.view-top-button .btn-middle {
+    height: 40px;
+    padding: 0 15px;
+}
+
+.view-top-button .btn-middle span {
+    font-size: 14px;
+}
+
+/* --- Ranking Table --- */
+.ranking-table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 475px;
+    margin-left: -50px;
+}
+
+.table-border {
+    background-size: 100% 100%;
+    padding: 20px;
+    width: 500px;
+}
+
+.ranking-table {
+    width: 90%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 54px;
+    color: white;
+    border-left: 1px solid #e2b24a;
+    border-right: 1px solid #e2b24a;
+}
+
+.ranking-table th,
+.ranking-table td {
+    padding: 10px;
+    border-right: 1px solid #e2b24a;
+}
+
+.ranking-table th:last-child,
+.ranking-table td:last-child {
+    border-right: none;
+}
+
+.ranking-table th {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    color: #e2b24a;
+}
+
+.ranking-table tbody tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.ranking-table tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ranking-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Customize a specific column text color */
+.ranking-table td:nth-child(2),
+.ranking-table th:nth-child(2) {
+    color: #e2b24a;
+}
+
+/* --- Left News Section --- */
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: -85px;
+    margin-left: -427px;
+    gap: 30px;
+}
+
+.news-section {
+    background: url('https://cdn.metin2sg.com/assets/images/left-block-bg.png') no-repeat center center;
+    padding: 20px;
+    width: 665px;
+    height: 800px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #444;
+    z-index: 10;               /* Add this line */
+    position: relative;        /* Required for z-index to take effect */
+}
+
+
+.news-section h2 {
+    font-size: 24px;
+    color: #e2b24a;
+    text-align: center;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.news-item {
+    margin-bottom: 20px;
+}
+
+.news-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #ffcc66;
+}
+
+.news-item p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.right-bottom-banner {
+    margin-top: -10px; /* Space below background */
+    margin-right: 65px;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+
+.right-bottom-banner img {
+    width: 116%;    /* takes 80% of its parent width */
+    max-width: 700px; /* limits size on large screens */
+    height: auto;
+}
+
